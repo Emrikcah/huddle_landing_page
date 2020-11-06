@@ -32,6 +32,7 @@ img:not(.logo) {
 }
 
 .main {
+   
   min-height: 100vh;
   margin: 0 auto;
   padding: 3.5rem 3.5rem 0 3.9rem;
@@ -89,6 +90,10 @@ img:not(.logo) {
 }
 
 @media (min-width: 900px) {
+
+   body{
+      max-height: 800px;
+   }
   .main {
     display: grid;
     grid-template-columns: 55% 45%;
@@ -97,6 +102,8 @@ img:not(.logo) {
     background-repeat: no-repeat;
     background-color: var(--violet);
     max-width: var(--desktop);
+    min-height: 800px;
+
     padding: 3.5rem 3.9rem 3rem 3.9rem;
   }
 
@@ -149,7 +156,20 @@ img:not(.logo) {
   footer {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     max-width: 520px;
-    margin-bottom: 6rem;
+    height: 10vh;
+   
+  }
+
+  .social-list{
+   display: flex;
+   align-self: center;
+   margin-top: 1rem;
+  }
+
+  .list-item{
+   margin: 0 0.5rem 0;
+   
   }
 }
